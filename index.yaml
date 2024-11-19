@@ -1,0 +1,17 @@
+apiVersion: v1
+entries:
+  hello-world:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-11-19T20:21:08.845123914Z"
+    description: A Helm chart for Kubernetes
+    digest: ee1bbf9d13b8937807afdb1fdc56ce75da3213fabf392958312afb30f2bce466
+    maintainers:
+    - name: alecsg77
+      url: https://alecsg77.github.io/helm-charts/
+    name: hello-world
+    type: application
+    urls:
+    - https://github.com/alecsg77/helm-charts/releases/download/hello-world-0.1.0/hello-world-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-11-19T20:21:08.845133692Z"
