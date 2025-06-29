@@ -1,6 +1,9 @@
 apiVersion: v2
 name: common
 description: A Helm chart for Kubernetes
+maintainers:
+  - name: alecsg77
+    url: https://alecsg77.github.io/helm-charts/
 
 # A chart can be either an 'application' or a 'library' chart.
 #

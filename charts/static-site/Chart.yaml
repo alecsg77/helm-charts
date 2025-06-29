@@ -1,6 +1,10 @@
 apiVersion: v2
 name: static-site
 description: Chart to build and deploy static sites
+maintainers:
+  - name: alecsg77
+    url: https://alecsg77.github.io/helm-charts/
+
 # A chart can be either an 'application' or a 'library' chart.
 #
 # Application charts are a collection of templates that can be packaged into versioned archives
