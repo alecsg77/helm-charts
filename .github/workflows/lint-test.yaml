@@ -24,6 +24,9 @@ jobs:
       - name: Set up chart-testing
         uses: helm/chart-testing-action@v2
 
+      - name: Copy ct config in CT_CONFIG_DIR
+        run: cp -n ct.yaml ${CT_CONFIG_DIR}/ct.yaml
+        
       - name: Run chart-testing (list-changed)
         id: list-changed
         run: |
