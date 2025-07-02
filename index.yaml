@@ -1,5 +1,36 @@
 apiVersion: v1
 entries:
+  common:
+  - apiVersion: v2
+    created: "2025-07-02T20:26:48.680175786Z"
+    description: A Helm chart for Kubernetes
+    digest: 1b630c21f0de6a55e341d03976b4c22cd9436c91742b40daea1b91f270985861
+    maintainers:
+    - name: alecsg77
+      url: https://alecsg77.github.io/helm-charts/
+    name: common
+    type: library
+    urls:
+    - https://github.com/alecsg77/helm-charts/releases/download/common-0.7.0/common-0.7.0.tgz
+    version: 0.7.0
+  cron-job:
+  - apiVersion: v2
+    created: "2025-07-02T20:26:48.798781748Z"
+    dependencies:
+    - name: common
+      repository: file://../common
+      version: 0.7.0
+    description: One chart to rule them all. A generic Helm chart for your application
+      deployments. Because no-one can remember the Kubernetes yaml syntax.
+    digest: 9e6f51f1e23e496bf20c601fb1bb8b3c0bea6f012382ad48f6d183e23556bdd8
+    maintainers:
+    - name: alecsg77
+      url: https://alecsg77.github.io/helm-charts/
+    name: cron-job
+    type: application
+    urls:
+    - https://github.com/alecsg77/helm-charts/releases/download/cron-job-0.74.0/cron-job-0.74.0.tgz
+    version: 0.74.0
   hello-world:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -14,4 +45,39 @@ entries:
     urls:
     - https://github.com/alecsg77/helm-charts/releases/download/hello-world-0.1.0/hello-world-0.1.0.tgz
     version: 0.1.0
-generated: "2024-11-19T20:21:08.845133692Z"
+  onechart:
+  - apiVersion: v2
+    created: "2025-07-02T20:26:48.92635855Z"
+    dependencies:
+    - name: common
+      repository: file://../common
+      version: 0.7.0
+    description: One chart to rule them all. A generic Helm chart for your application
+      deployments. Because no-one can remember the Kubernetes yaml syntax.
+    digest: d0b783e362d8f3c7c55943f0d55ab0b1352a4c710a23eea00158aa936a786924
+    maintainers:
+    - name: alecsg77
+      url: https://alecsg77.github.io/helm-charts/
+    name: onechart
+    type: application
+    urls:
+    - https://github.com/alecsg77/helm-charts/releases/download/onechart-0.74.0/onechart-0.74.0.tgz
+    version: 0.74.0
+  static-site:
+  - apiVersion: v2
+    created: "2025-07-02T20:26:49.04437643Z"
+    dependencies:
+    - name: common
+      repository: file://../common
+      version: 0.7.0
+    description: Chart to build and deploy static sites
+    digest: 20034ea1b9bb633611abbb7d481a5a3dddca705871ed52021a57a836ecaeb069
+    maintainers:
+    - name: alecsg77
+      url: https://alecsg77.github.io/helm-charts/
+    name: static-site
+    type: application
+    urls:
+    - https://github.com/alecsg77/helm-charts/releases/download/static-site-0.74.0/static-site-0.74.0.tgz
+    version: 0.74.0
+generated: "2025-07-02T20:26:49.044381549Z"
